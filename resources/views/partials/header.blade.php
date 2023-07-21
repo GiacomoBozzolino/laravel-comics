@@ -1,6 +1,6 @@
 <header class="p-0">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row p-0">
             <div class="col-12  p-0">
                 <div class="d-flex justify-content-end align-items-center bg-primary">
                     <div class="px-2 px-1">
@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex">
+    <div class="container ">
         <div class="row">
             <div class=" col-12 d-flex flex-wrap align-items-center justify-content-between py-3"> 
                 <div >

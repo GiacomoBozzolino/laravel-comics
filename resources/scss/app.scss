@@ -1,5 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 header{
     height: 150px;
     padding: 20px;
@@ -92,3 +97,101 @@ main{
 
 
 }
+// classi footer
+
+footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+.upper-footer{
+    background-size: cover;
+    display: flex;
+        div{
+            padding: 20px;
+            color: white;
+                ul{
+                    li{
+                        padding: 2px 0;
+                        a{
+                            color: #959595;
+                        }
+                    }
+                    
+                }
+        }
+}
+
+h3{
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+.container.flex{
+    justify-content: space-between;
+}
+.logo{
+    background-image: url(../images/dc-logo-bg.png);
+    max-height:40%;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+.lower-footer{
+    background-color: #303030;
+    height: 100px;
+        .container{
+            height: 100%;
+
+            button{
+                padding: 20px;
+                background-color: transparent;
+                border: 2px solid #1F81FA;
+                color: white;
+                font-size: 17px;
+                font-weight: bold;
+                cursor: pointer;
+
+            }
+        }
+    
+
+}
+
+
+.lower-content{
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+     div{
+            display: flex;
+            h3{
+                color: #1F81FA;
+                margin-right: 20px;
+                font-size: 22px;
+            }
+            ul{
+                li{
+                    padding: 0 10px;
+                }
+            }
+
+        }
+}
+    .row{
+        height: 100%;
+        padding: 0 20px;
+        
+    }
+
+
+
+
+
+

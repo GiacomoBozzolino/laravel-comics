@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('db.comics');
-    return view('home', compact ('comics'));
+    $list= config('db-footer.comics');
+    $list_2= config('db-footer.info');
+    $list_3= config('db-footer.sites');
+    return view('home', compact ('comics', 'list', 'list_2', 'list_3'));
 }) ->name('homepage');
