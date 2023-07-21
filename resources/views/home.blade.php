@@ -26,24 +26,37 @@
             <img id="jumbo"  class="flex" src="{{ Vite::asset('resources/images/jumbotron.jpg')}}" >
         </div>
         <div class="black">
-            <div class="container content">
-                <div id="series">CURRENT SERIES</div>
-                <div class="flex flex-wrap">
-                    <AppComics v-for="(comics, index) in NewComics" :key="index" :recentComics='comics'  /> 
+            <div class="container ">
+                <div class="row"> 
+                    <div>
+                        <div id="series">CURRENT SERIES</div>
+                    </div>
+                     @foreach($comics as $comic)
+                    <div class="col-2">
+                   
+                    <li class="d-flex align-item-">
+                        <a href="#">
+                            <img :src="{{$comic ['thumb'] }}" alt="">
+                            <div class="text-center">
+                            {{$comic [ "title"] }}
+                            </div>
+                        </a>
+                    </li> 
+                     
+                    </div>
+                    @endforeach 
+
                 </div>
+
+               
+                
                 
             </div>
         </div>
         <div class="blue">
-            <div class="container blue-content flex">
-                <ul class="flex">
-                    @foreach($products as $product)
-                    <li >
-                        <a href="#">
-                            <img :src="{{}}" alt="">
-                            <div></div>
-                        </a>
-                    </li>   
+            <div class="container blue-content d-flex">
+                <ul class="d-flex">
+                    
                 </ul>
             </div>
         </div>

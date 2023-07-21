@@ -21,7 +21,14 @@ header{
 }
 
 
+main{
+    color:white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
 
+}
 
 
 .blue{
@@ -41,10 +48,9 @@ header{
 
 
 .blue-content{
-    height: 200px;
+    // height: 200px;
     justify-content: center;
         ul{
-            
             padding: 0 80px;
            justify-content: space-around;
            flex-wrap: wrap;
@@ -53,11 +59,12 @@ header{
                display: flex;
                padding: 0 20px;
                a{
-                    display: flex;
                     color: white;
-                    align-items: center;
+                    
                        img{
-                           width: 50px;
+                           width: 80px;
+                           height: 70px;
+                         
                            margin: 0 10px;  
                        }  
                 }
