@@ -19,3 +19,69 @@ header{
     }
  
 }
+
+
+
+
+
+.blue{
+    background-color:#1F81FA ;
+}
+.black{
+    background-color: black;
+}
+
+.content{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+      
+}
+
+
+.blue-content{
+    height: 200px;
+    justify-content: center;
+        ul{
+            
+            padding: 0 80px;
+           justify-content: space-around;
+           flex-wrap: wrap;
+
+           li{
+               display: flex;
+               padding: 0 20px;
+               a{
+                    display: flex;
+                    color: white;
+                    align-items: center;
+                       img{
+                           width: 50px;
+                           margin: 0 10px;  
+                       }  
+                }
+
+           };
+        }
+
+}
+
+#jumbo{
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#series{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background-color: #1F81FA;
+    padding: 10px 20px;
+    font-weight: bold;
+    top: -25px;
+
+
+}
