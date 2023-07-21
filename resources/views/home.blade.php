@@ -28,39 +28,62 @@
         <div class="black">
             <div class="container ">
                 <div class="row"> 
-                    <div>
+                    <div class="position-relative">
                         <div id="series">CURRENT SERIES</div>
                     </div>
                      @foreach($comics as $comic)
                     <div class="col-2">
                    
-                    <li class="d-flex align-item-">
-                        <a href="#">
-                            <img :src="{{$comic ['thumb'] }}" alt="">
-                            <div class="text-center">
-                            {{$comic [ "title"] }}
-                            </div>
-                        </a>
-                    </li> 
-                     
+                        <li class="d-flex pt-5 pb-2">
+                            <a href="#">
+                                <img class="thumb" src="{{$comic ['thumb'] }}" alt="{{$comic [ "title"] }}">
+                                <div class="">
+                                {{$comic [ "title"] }}
+                                </div>
+                            </a>
+                        </li> 
                     </div>
                     @endforeach 
 
-                </div>
-
-               
-                
-                
+                </div>   
             </div>
         </div>
         <div class="blue">
-            <div class="container blue-content d-flex">
+            <div class="container blue-content ">
                 <ul class="d-flex">
-                    
+                    <li >
+                        <a class="d-flex align-items-center" href="#">
+                            <img src="{{ Vite::asset('resources/images/buy-comics-digital-comics.png')}}" alt="">
+                            <div> DIGITAL COMICS</div>
+                        </a>
+                    </li>   
+                    <li >
+                        <a class="d-flex align-items-center" href="#">
+                            <img src="{{ Vite::asset('resources/images/buy-comics-merchandise.png')}}" alt="">
+                            <div> DIGITAL MERCHANDISE</div>
+                        </a>
+                    </li>   
+                    <li >
+                        <a class="d-flex align-items-center" href="#">
+                            <img src="{{ Vite::asset('resources/images/buy-comics-subscriptions.png')}}" alt="">
+                            <div> SUBSCRIPTION</div>
+                        </a>
+                    </li>   
+                    <li >
+                        <a class="d-flex align-items-center" href="#">
+                            <img src="{{ Vite::asset('resources/images/buy-comics-shop-locator.png')}}" alt="">
+                            <div>COMIC SHOP LOCATOR</div>
+                        </a>
+                    </li>   
+                    <li >
+                        <a class="d-flex align-items-center" href="#">
+                            <img src="{{ Vite::asset('resources/images/buy-dc-power-visa.svg')}}" alt="">
+                            <div>DC POWER VISA</div>
+                        </a>
+                    </li>   
                 </ul>
             </div>
-        </div>
-        
+         </div>  
     </main>
 
 </body>

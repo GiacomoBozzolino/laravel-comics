@@ -46,26 +46,26 @@ main{
       
 }
 
+.thumb{
+    width: 150px;
+}
 
 .blue-content{
     // height: 200px;
     justify-content: center;
+    padding: 30px 0;
         ul{
-            padding: 0 80px;
            justify-content: space-around;
-           flex-wrap: wrap;
-
            li{
                display: flex;
                padding: 0 20px;
                a{
                     color: white;
-                    
+                
                        img{
                            width: 80px;
-                           height: 70px;
-                         
-                           margin: 0 10px;  
+                           margin: 0 10px; 
+                            
                        }  
                 }
 
