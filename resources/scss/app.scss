@@ -7,23 +7,63 @@ ul{
 
 header{
     height: 150px;
-    padding: 20px;
+    // padding: 20px;
     justify-content: space-between;
     align-items: center;
 
-    ul { list-style-type: none;
+    ul{
+        height: 130px;
+        align-items: center;
         li{
-            padding:0 10px;
+            display: flex;
+            margin: 0 10px;
+            height: 100%;
+            align-items: center;
+            padding-bottom: 5px;
+
             a{
                 text-decoration: none;
-                color: rgb(43, 43, 43);
                 font-weight: bold;
+                color: #303030;
 
+                &:hover{
+                    border-bottom: 5px solid #1F81FA;
+                    padding-top: 50px;
+                    color:#1F81FA;
+                    height: 100%;
+                    font-weight: bold;
+                }
             }
+
+            input{
+                border: none;
+                text-align: right;
+                font-weight:bold ;
+                border-bottom: 1px solid #1F81FA;
+            }
+
+            hr{
+            height: 5px;
+            width: 100px;
+            }
+       
+        
         }
     }
+      
  
 }
+
+.active{
+    border-bottom: 5px solid #1F81FA;
+    padding-top: 50px;
+    color:#1F81FA;
+    height: 100%;
+    font-weight: bold;
+      
+  }
+
+
 
 
 main{

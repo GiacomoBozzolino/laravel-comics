@@ -1,8 +1,8 @@
 <header class="p-0">
-    <div class="container-fluid">
+    <div class="container-fluid bg-primary">
         <div class="row p-0">
             <div class="col-12  p-0">
-                <div class="d-flex justify-content-end align-items-center bg-primary">
+                <div class=" container d-flex justify-content-end align-items-center text-white ">
                     <div class="px-2 px-1">
                         DC POWER VISA
                     </div>
@@ -15,8 +15,8 @@
     </div>
     <div class="container ">
         <div class="row">
-            <div class=" col-12 d-flex flex-wrap align-items-center justify-content-between py-3"> 
-                <div >
+            <div class=" col-12 d-flex flex-wrap align-items-center justify-content-between "> 
+                <div class="pb-4">
                     <img src="{{ Vite::asset('resources/images/dc-logo.png')}}" alt="">
                 </div>
                 <div>
@@ -25,7 +25,7 @@
                             <a href="">CHARACTERS</a>
                         </li>
                         <li >
-                             <a href="{{ route ('homepage') }}">COMICS</a>
+                             <a  class="nav-link {{ Route::currentRouteName()==='homepage' ? 'active': '' }}" href="{{ route ('homepage') }}">COMICS</a>
                         </li>
                         <li >
                             <a href="">MOVIES</a>
@@ -52,7 +52,10 @@
                             <a href="">SHOP</a>
                         </li>
                         <li >
-                            <input type="search" name="search" id="search" placeholder="search">
+                            
+                            <input type="search" name="search" id="search" placeholder="Search ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            
                         </li>
                     </ul>
                 </div>
