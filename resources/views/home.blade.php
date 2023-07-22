@@ -18,21 +18,23 @@
 
     
 <body>
-
+{{-- HEADER --}}
     @include('partials.header')
+    {{-- FINE HEADER --}}
+    {{-- MAIN --}}
     <main >
         <div >
             <img id="jumbo"  class="flex" src="{{ Vite::asset('resources/images/jumbotron.jpg')}}" >
         </div>
+        {{-- SEZIONE FUMETTI --}}
         <div class="black">
             <div class="container ">
-                <div class="row"> 
+                <div class="row pb-3"> 
                     <div class="position-relative">
                         <div id="series">CURRENT SERIES</div>
                     </div>
                      @foreach($comics as $comic)
                     <div class="col-2">
-                   
                         <li class="d-flex pt-5 pb-2">
                             <a href="#">
                                 <img class="thumb" src="{{$comic ['thumb'] }}" alt="{{$comic [ "title"] }}">
@@ -43,10 +45,13 @@
                         </li> 
                     </div>
                     @endforeach 
-
+                    <div class="col-12 d-flex justify-content-center">
+                        <button >LOAD MORE</button>
+                    </div>
                 </div>   
             </div>
         </div>
+        {{-- FINE SEZIONE FUMETTI --}}
         <div class="blue">
             <div class="container blue-content ">
                 <ul class="d-flex">
@@ -85,53 +90,67 @@
          </div>  
     </main>
     <footer>
-        <div class="container d-flex">
-            <div class="upper-footer">
-                <div>
-                    <h3>DC COMICS</h3>
-                    <ul>
-                        @foreach($list as $item)
-                        <li >
-                            <a href={{$item['link']}}>{{$item['label']}}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-    
-                    
-                        <h3>SHOP</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Shop DC</a>
-                        </li>
-                        <li>
-                            <a href="#">Shop DC Collectibles</a>
-                        </li>
-                    </ul>
+        <div class="container ">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex justify-content-between ">
+                        <div class="upper-footer">
+                            <div>
+                                <h3>DC COMICS</h3>
+                                <ul>
+                                    @foreach($list as $item)
+                                    <li >
+                                        <a href={{$item['link']}}>{{$item['label']}}</a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                
+                                
+                                    <h3>SHOP</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Shop DC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shop DC Collectibles</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>DC </h3>
+                                <ul>
+                                    @foreach($list_2 as $item)
+                                    <li >
+                                        <a href={{$item['link']}}>{{$item['label']}}</a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>SITES</h3>
+                                <ul>
+                                    @foreach($list_3 as $item)
+                                    <li >
+                                        <a href={{$item['link']}}>{{$item['label']}}</a>
+                                    </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                     <div class="p-3">
+                        All site Content TM  &copy; 2020 DC Entertiment, unless otherwise <a href="">noted here</a>. All right reserve. <br>
+                        <a href="">Cookies Settings</a>
+                    </div>
                 </div>
-                <div>
-                    <h3>DC </h3>
-                    <ul>
-                        @foreach($list_2 as $item)
-                        <li >
-                            <a href={{$item['link']}}>{{$item['label']}}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div>
-                    <h3>SITES</h3>
-                    <ul>
-                        @foreach($list_3 as $item)
-                        <li >
-                            <a href={{$item['link']}}>{{$item['label']}}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
+               <div class="col-6">
+                   <div class="logo">
+                      {{-- <img src="{{ Vite::asset('resources/images/dc-logo-bg.png')}}" alt="">  --}}
+                   </div>
+               </div>
+                
             </div>
-            <div class="logo">
-                <!-- <img src="assets/dc-logo-bg.png" alt=""> -->
-            </div> 
+            
         </div>
         <div class="lower-footer  ">
             <div class="container">

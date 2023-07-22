@@ -94,14 +94,23 @@ main{
     padding: 10px 20px;
     font-weight: bold;
     top: -25px;
+}
 
-
+button{
+    padding: 7px 50px;
+    margin:none;
+    border:none;
+    background-color: #1F81FA;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
 // classi footer
 
 footer{
     background-image: url(../images/footer-bg.jpg);
     background-size: cover;
+    color: #959595
 }
 .container{
     max-width: 1400px;
@@ -136,8 +145,8 @@ h3{
 }
 .logo{
     background-image: url(../images/dc-logo-bg.png);
-    max-height:40%;
-    width: 40%;
+    height:100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover
