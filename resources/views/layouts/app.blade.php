@@ -15,9 +15,14 @@
     @vite('resources/js/app.js')
 </head>
 
-    
     <body>
+        {{-- HEADER --}}
+        @include('partials.header')
+         
         @yield('content')
+        
+         {{-- inizio footer --}}
+        @include('partials.footer')
 
     </body>
 

@@ -4,9 +4,7 @@
 @section('content')
     
 
-{{-- HEADER --}}
-    @include('partials.header')
-    {{-- FINE HEADER --}}
+
     {{-- MAIN --}}
     <main >
         <div >
@@ -75,8 +73,7 @@
             </div>
          </div>  
     </main>
-    {{-- inizio footer --}}
-    @include('partials.footer')
+
    
 
 @endsection

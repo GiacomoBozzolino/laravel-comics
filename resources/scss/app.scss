@@ -67,7 +67,7 @@ header{
 
 
 main{
-    color:white;
+    
     a{
         color: white;
         text-decoration: none;
@@ -239,7 +239,25 @@ h3{
         
     }
 
+// CLASSI SHOW
 
+#thumb{
+    max-height: 300px;
+}
+
+.height{
+    height: 7vh;
+}
+
+.thumbnail{
+   position: absolute;
+   bottom: 1rem;
+    border: 1px white solid
+}
+
+h1{
+    text-transform: uppercase
+}
 
 
 

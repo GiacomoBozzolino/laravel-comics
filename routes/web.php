@@ -22,8 +22,11 @@ Route::get('/', function () {
 }) ->name('homepage');
 
 Route::get('/{comic}', function ($id) {
+    $list= config('db-footer.comics');
+    $list_2= config('db-footer.info');
+    $list_3= config('db-footer.sites');
     $products =config('db.comics');
     $product = $products [$id];
-    return view('products.show', compact('product'));
+    return view('products.show', compact('product', 'list', 'list_2', 'list_3'));
     
 }) -> name('products.show');
