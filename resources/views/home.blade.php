@@ -19,10 +19,10 @@
                     <div class="position-relative">
                         <div id="series">CURRENT SERIES</div>
                     </div>
-                     @foreach($comics as $comic)
+                     @foreach($comics as $id => $comic)
                     <div class="col-2">
                         <li class="d-flex pt-5 pb-2">
-                            <a href="#">
+                            <a href="{{ route ('products.show', $id )}}">
                                 <img class="thumb" src="{{$comic ['thumb'] }}" alt="{{$comic [ "title"] }}">
                                 <div class="">
                                 {{$comic [ "title"] }}

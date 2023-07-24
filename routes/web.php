@@ -21,3 +21,9 @@ Route::get('/', function () {
     return view('home', compact ('comics', 'list', 'list_2', 'list_3'));
 }) ->name('homepage');
 
+Route::get('/{comic}', function ($id) {
+    $products =config('db.comics');
+    $product = $products [$id];
+    return view('products.show', compact('product'));
+    
+}) -> name('products.show');
