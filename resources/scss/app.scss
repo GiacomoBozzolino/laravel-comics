@@ -259,6 +259,34 @@ h1{
     text-transform: uppercase
 }
 
+.table-bg{
+    background-color:#F6F6F6 ;
+    border-top: 1px solid rgba(146, 145, 145, 0.315);
+}
+
+table{
+    background-color: transparent;
+    margin-bottom: 30px;
+    tr{
+        border-bottom: 1px solid rgba(146, 145, 145, 0.315);
+        
+        th{
+            padding-right:30px;
+            padding-top: 10px;
+            padding-bottom: 10px;   
+        }
+
+        td{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
 
 
-
+.bottom-menu{
+    filter: invert(50%);
+    img{
+        height: 50px;
+    }
+}
