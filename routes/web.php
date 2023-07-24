@@ -20,3 +20,4 @@ Route::get('/', function () {
     $list_3= config('db-footer.sites');
     return view('home', compact ('comics', 'list', 'list_2', 'list_3'));
 }) ->name('homepage');
+

@@ -25,7 +25,7 @@
                             <a href="">CHARACTERS</a>
                         </li>
                         <li >
-                             <a  class="nav-link {{ Route::currentRouteName()==='homepage' ? 'active': '' }}" href="{{ route ('homepage') }}">COMICS</a>
+                             <a  class="{{ Route::currentRouteName()==='homepage' ? 'active': '' }}" href="{{ route ('homepage') }}">COMICS</a>
                         </li>
                         <li >
                             <a href="">MOVIES</a>
